@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Create sub-navigation content
     const createSubNavContent = () => {
-        let content = '<a href="#" class="back-nav-link"><img src="assets/logo.png" alt="Logo" class="nav-logo"></a>';
+        let content = '<a href="#" class="back-nav-link"><img src="assets/Logo.png" alt="Logo" class="nav-logo"></a>';
         content += '<span class="separator">|</span>';
         
         // Add section links based on available sections
