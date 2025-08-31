@@ -1,0 +1,119 @@
+/* 个人资料相关样式 */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    margin: 0 0 30px 0;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.profile-main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.profile-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin: 0;
+    padding-top: 0;
+}
+
+.profile-bio p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.profile-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.profile-bio a {
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+.profile-bio a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image-container {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .profile-content {
+        width: 100%;
+    }
+}
+/* 等等 */ 

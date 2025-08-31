@@ -1,0 +1,82 @@
+/* Common section styles */
+.research-list li,
+.education-list li,
+.teaching-list li,
+.awards-list li,
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.research-list li:last-child,
+.education-list li:last-child,
+.teaching-list li:last-child,
+.awards-list li:last-child,
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+/* Education section */
+.education-item {
+    margin-bottom: 5px;
+}
+
+.institution {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 3px;
+}
+
+/* Project section */
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item h3 {
+    color: var(--text-primary);
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Teaching section */
+.teaching-details {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 3px;
+}
+
+/* Awards section */
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.award-item strong {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.award-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .award-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .award-item strong {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+    
+    .award-date {
+        font-size: 0.9rem;
+    }
+} 

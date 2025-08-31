@@ -1,0 +1,123 @@
+.experience-quote {
+    font-size: 1.2rem;
+    color: #ff6b6b;
+    text-align: center;
+    margin: 20px 0 40px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(255, 107, 107, 0.2);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--text-secondary);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -44px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    border: 3px solid var(--bg-secondary);
+    box-shadow: 0 0 0 2px var(--text-secondary);
+}
+
+.timeline-content {
+    background: transparent;
+    padding: 20px 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.timeline-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.timeline-period {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.timeline-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 10px;
+}
+
+.detail-label {
+    min-width: 100px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.detail-value {
+    color: var(--text-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: -24px;
+    }
+
+    .timeline::before {
+        left: 9px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .detail-label {
+        min-width: auto;
+    }
+} 
