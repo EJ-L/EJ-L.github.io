@@ -16,7 +16,7 @@
     padding: 0 20px;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
 }
 
 .theme-toggle:hover {

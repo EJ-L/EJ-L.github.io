@@ -64,19 +64,57 @@
     white-space: nowrap;
 }
 
+/* Teaching styles - same as awards */
+.teaching-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.teaching-item strong {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.teaching-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* Service styles - same as awards */
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.service-item strong {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.service-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
-    .award-item {
+    .award-item, .teaching-item, .service-item {
         flex-direction: column;
         gap: 5px;
     }
     
-    .award-item strong {
+    .award-item strong, .teaching-item strong, .service-item strong {
         font-size: 1rem;
         margin-right: 0;
     }
     
-    .award-date {
+    .award-date, .teaching-date, .service-date {
         font-size: 0.9rem;
     }
 } 

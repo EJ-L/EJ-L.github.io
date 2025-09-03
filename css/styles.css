@@ -52,7 +52,7 @@ body {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
 }
 
 /* Common list styles */
@@ -155,7 +155,7 @@ a:hover {
     padding: 0 20px;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 

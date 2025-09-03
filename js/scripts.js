@@ -4,6 +4,8 @@ const components = [
     'news',
     // 'education',
     'experience',
+    'teaching',
+    'service',
     'awards',
     // Commented out modules to hide them
     // 'projects',
